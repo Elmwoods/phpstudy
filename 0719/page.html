@@ -1,0 +1,33 @@
+<?php
+include '../library/page.Class.php';
+$page = $_GET['page'];
+?>
+<?php
+
+        include '../library/conn.php';
+
+
+        $count = $mysql -> num_rows($mysql -> query("select *  from article where article_category = 'php' "));
+$pages = new PageClass($count,25,$_GET['page'],$_SERVER['PHP_SELF'].'?page={page}');
+$sql  = "select * from article where article_category = 'php' order by ";
+$sql .= "article_date desc limit ".$pages -> page_limit.",".$pages -> myde_size;
+$result = $mysql -> query($sql);
+?>
+
+<table class="table">
+
+    <?php
+      while($myrow = $mysql -> fetch_array($result)){
+    ?>
+    <tr>
+        <td width="30"><img src="../images/topicnew.gif" /></td>
+        <td width="90" style="font-family:Georgia"><? echo $myrow["article_date"] ?></td>
+        <td width="480"><a href="../<? echo $myrow["article_category"] ?>/<? echo $myrow["article_filename"] ?>"><? echo $myrow["article_title"] ?></a></td>
+    </tr>
+    <?php
+      }
+      ?>
+</table>
+<?php
+    echo $pages -> myde_write();
+?>
