@@ -1,0 +1,208 @@
+gitÉÏ´«ÎÄ¼þµÄ½Ì³ÌµØÖ·
+http://blog.csdn.net/hanhailong726188/article/details/46738929
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy
+$ git init
+Initialized empty Git repository in F:/wamp/www/phpStudy/.git/
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git add .
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified co                                                                                                                                                                                      mmit
+    --squash <commit>     use autosquash formatted message to squash specified c                                                                                                                                                                                      ommit
+    --reset-author        the commit is authored by me now (used with -C/-c/--am                                                                                                                                                                                      end)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no.                                                                                                                                                                                       (Default: all)
+
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git commit -m "Ñ§Ï°"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrator@PC-201708041048.(                                                                                                                                                                                      none)')
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git remote add origin https://github.com/Elmwoods/phpstudy
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git pull origin master
+fatal: Couldn't find remote ref master
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git remote add origin https://github.com/Elmwoods/phpstudy
+fatal: remote origin already exists.
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/Elmwoods/phpstudy'
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ ^C
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ ^C
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git init
+Reinitialized existing Git repository in F:/wamp/www/phpStudy/.git/
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git add .
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git git commit -m "×¢ÊÍÓï¾ä"
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git commit -m "×¢ÊÍÓï¾ä"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrator@PC-201708041048.(                                                                                                                                                                                      none)')
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git commit -m "×¢ÊÍÓï¾ä"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrator@PC-201708041048.(                                                                                                                                                                                      none)')
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git config --global user.email "18679261997@163.com"
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git commit -m "×¢ÊÍÓï¾ä"
+[master (root-commit) 090b1e0] ×¢ÊÍÓï¾ä
+ 27 files changed, 2396 insertions(+)
+ create mode 100644 0706/php-doubleColon-usage.php
+ create mode 100644 0710/array-element-connect.php
+ create mode 100644 0710/shuzu-bianli.php
+ create mode 100644 0710/szbl1.php
+ create mode 100644 0712/2.jpg
+ create mode 100644 0712/image-conversion.php
+ create mode 100644 0712/image.jpg
+ create mode 100644 0712/thumb.png
+ create mode 100644 0713/file.php
+ create mode 100644 0713/object-oriented-stu.php
+ create mode 100644 0713/str.php
+ create mode 100644 0713/user-agent.php
+ create mode 100644 0715/__construct.php
+ create mode 100644 0715/fun.php
+ create mode 100644 0715/public-protected-private.php
+ create mode 100644 0719/is-numeric.php
+ create mode 100644 0719/page.html
+ create mode 100644 0719/page.php
+ create mode 100644 0725/shuzu.php
+ create mode 100644 0726/array-complete.php
+ create mode 100644 0726/array-js.html
+ create mode 100644 0726/shuzu.php
+ create mode 100644 0727/foreach-test.php
+ create mode 100644 0727/test.php
+ create mode 100644 0728/test.php
+ create mode 100644 0807/phpExcel.rar
+ create mode 100644 functions.php
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ ^C
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+error: unable to read askpass response from 'F:/Git/mingw64/libexec/git-core/git                                                                                                                                                                                      -gui--askpass'
+Password for 'https://@github.com':
+
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Elmwoods/phpstudy/'
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ ^C
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git config --global user.email "18679261997@163.com"
+
+Administrator@PC-201708041048 MINGW64 /f/wamp/www/phpStudy (master)
+$ git push -u origin master
+Counting objects: 40, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (37/37), done.
+Writing objects:  95% (38/40), 9.42 MiB | 234.00 KiB/s
