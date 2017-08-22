@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>防止图片不能被用户下载或者另存为</title>
+</head>
+<body>
+<!--防止右键-->
+<!--需加水印-->
+<!--<img src="VV_lpgo.png" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false"-->
+     <!--onselectstart="event.returnValue=false"/>-->
+<img src="VV_lpgo.png"/>
+<script type="text/javascript">
+    document.body.oncontextmenu = document.body.ondragstart = document.body.onselectstart = document.body.onbeforecopy = function () {
+        return false;
+    };
+    document.body.onselect = document.body.oncopy = document.body.onmouseup = function () {
+        document.selection.empty();
+    };
+</script>
+</body>
+</html>
